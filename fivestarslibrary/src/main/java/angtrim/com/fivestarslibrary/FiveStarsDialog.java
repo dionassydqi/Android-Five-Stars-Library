@@ -24,7 +24,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
     private final static String DEFAULT_TEXT = "How much do you love our app?";
     private final static String DEFAULT_POSITIVE = "Ok";
     private final static String DEFAULT_NEGATIVE = "Not Now";
-    private final static String DEFAULT_NEVER = "Never";
+  
     private final static String SP_NUM_OF_ACCESS = "numOfAccess";
     private static final String SP_DISABLED = "disabled";
     private static final String TAG = FiveStarsDialog.class.getSimpleName();
@@ -44,7 +44,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
     private int starColor;
     private String positiveButtonText;
     private String negativeButtonText;
-    private String neverButtonText;
+    
 
     public FiveStarsDialog(Context context, String supportEmail) {
         this.context = context;
@@ -83,7 +83,6 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
                 .setView(dialogView)
                 .setNegativeButton((negativeButtonText == null) ? DEFAULT_NEGATIVE : negativeButtonText, this)
                 .setPositiveButton((positiveButtonText == null) ? DEFAULT_POSITIVE : positiveButtonText, this)
-                .setNeutralButton((neverButtonText == null) ? DEFAULT_NEVER : neverButtonText, this)
                 .create();
     }
 
@@ -191,10 +190,7 @@ public class FiveStarsDialog implements DialogInterface.OnClickListener {
         return this;
     }
 
-    public FiveStarsDialog setNeverButtonText(String neverButtonText) {
-        this.neverButtonText = neverButtonText;
-        return this;
-    }
+  
 
     /**
      * Set to true if you want to send the user directly to the market
