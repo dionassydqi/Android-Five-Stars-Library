@@ -1,7 +1,7 @@
 ## Android Five Stars Library
 
 ## Original Library https://github.com/Angtrim/Android-Five-Stars-Library
-## Modified removed Neverr action button
+## Modified removed Never action button
 
 Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications.
 
@@ -60,7 +60,7 @@ Example:
 ## Features
 
 The library is very simple, just note that :
-* When the user tap OK or NEVER the dialog will not show again
+* When the user tap OK or NEVER the dialog will not show again( But in this Library never button has removed)
 * When the user tap NOT NOW the access counter will be reset and the dialog will be shown again after the selected times.
 
 ## Used by
