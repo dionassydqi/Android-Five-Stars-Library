@@ -1,5 +1,8 @@
 ## Android Five Stars Library
 
+## Original Library https://github.com/Angtrim/Android-Five-Stars-Library
+## Modified removed Neverr action button
+
 Android Five Stars Library is a small library that helps developers add a **"Rate My App"** dialog to their applications.
 
 It's called "Five Stars" because the dialog has a different behaviour based on the rating given by the user.
@@ -31,7 +34,7 @@ To use the library, first include it your project using Gradle
     }
 
 	dependencies {
-	        compile 'com.github.Angtrim:Android-Five-Stars-Library:v3.1'
+	        implementation 'com.github.dionassydqi:Android-Five-Stars-Library:3.2'
 	}
 
 
